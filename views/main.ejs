@@ -1,0 +1,185 @@
+<h1>CUSTOMER SERVICE REPORT</h1>
+
+<div class="__report">
+  <h4>Report Details</h4>
+  <span>CSR Number:</span>
+  <span>Date: <%= new Date().toDateString() %></span>
+</div>
+
+<div class="cus">
+  <h4>Customer Name and Address</h4>
+  <label for="name">Name:</label>
+  <textarea type="text" name="name" cols="50" rows="1"></textarea>
+
+  <label for="address__body">Address:</label>
+  <textarea name="address_body" cols="50" rows="5"></textarea>
+
+  <label for="call__status">Status of Call</label>
+  <input type="radio" name="callstat">Warranty
+  <input type="radio" name="callstat">Out of Warranty
+</div>
+
+<div class="problemreport">
+  <h4>Nature of Problem</h4>
+  <div class="grid">
+    <label for="no_display">
+      <input type="checkbox" name="problem" id="no_display"> NO DISPLAY
+    </label>
+    <label for="dim_display">
+      <input type="checkbox" name="problem" id="dim_display"> DIM DISPLAY
+    </label>
+    <label for="not_powering_on">
+      <input type="checkbox" name="problem" id="not_powering_on"> NOT POWERING ON
+    </label>
+    <label for="motherboard_problem">
+      <input type="checkbox" name="problem" id="motherboard_problem"> MOTHERBOARD PROBLEM
+    </label>
+    <label for="keyboard_problem">
+      <input type="checkbox" name="problem" id="keyboard_problem"> KEYBOARD PROBLEM
+    </label>
+    <label for="wifi_issue">
+      <input type="checkbox" name="problem" id="wifi_issue"> WIFI ISSUE
+    </label>
+    <label for="adapter_issue">
+      <input type="checkbox" name="problem" id="adapter_issue"> ADAPTER ISSUE
+    </label>
+    <label for="battery_issue">
+      <input type="checkbox" name="problem" id="battery_issue"> BATTERY ISSUE
+    </label>
+    <label for="ram_issue">
+      <input type="checkbox" name="problem" id="ram_issue"> RAM ISSUE
+    </label>
+    <label for="screen_panel_broken">
+      <input type="checkbox" name="problem" id="screen_panel_broken"> SCREEN PANEL BROKEN
+    </label>
+    <label for="os_to_reload">
+      <input type="checkbox" name="problem" id="os_to_reload"> OS TO RELOAD
+    </label>
+    <label for="software_issues">
+      <input type="checkbox" name="problem" id="software_issues"> SOFTWARE ISSUES
+    </label>
+    <label for="touch_pad_issue">
+      <input type="checkbox" name="problem" id="touch_pad_issue"> TOUCH PAD ISSUE
+    </label>
+    <label for="base_panel_broken">
+      <input type="checkbox" name="problem" id="base_panel_broken"> BASE PANEL BROKEN
+    </label>
+    <label for="install_antivirus">
+      <input type="checkbox" name="problem" id="install_antivirus"> INSTALL ANTIVIRUS
+    </label>
+    <label for="ssd_hdd_installation">
+      <input type="checkbox" name="problem" id="ssd_hdd_installation"> SSD/HDD INSTALLATION
+    </label>
+  </div>
+  <label for="additional_problem">Other Problems:</label>
+  <textarea name="additional_problem" id="additional_problem" cols="90" rows="2"></textarea>
+
+  <label for="system__status">System Status</label>
+  <input type="radio" name="systemStats">Dead
+  <input type="radio" name="systemStats">Powering On
+</div>
+
+<div class="equipment_type">
+  <h4>Equipment</h4>
+  <label><input type="radio" name="equipment" value="desktop"> Desktop</label>
+  <label><input type="radio" name="equipment" value="laptop"> Laptop</label>
+</div>
+
+<div class="desktop__configuration">
+  <label for="problemreport__body__CPU">CPU:</label>
+  <textarea name="problemreport_body__CPU" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__MBD">MotherBoard:</label>
+  <textarea name="problemreport_body__MBD" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__RAM">RAM:</label>
+  <textarea name="problemreport_body__RAM" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__HDD">HDD:</label>
+  <textarea name="problemreport_body__HDD" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__SSD">SSD:</label>
+  <textarea name="problemreport_body__SSD" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__Monitor">Monitor:</label>
+  <textarea name="problemreport_body__Monitor" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__battery">Battery:</label>
+  <textarea name="problemreport_body__battery" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__adapter">Adapter:</label>
+  <textarea name="problemreport_body__adapter" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__GC">Graphics Card:</label>
+  <textarea name="problemreport_body__GC" cols="5" rows="1"></textarea>
+</div>
+
+<div class="laptop__configuration">
+  <label for="problemreport__body__laptop">Laptop:</label>
+  <textarea name="problemreport_body__laptop" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__battey">Battery:</label>
+  <textarea name="problemreport_body__battey" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__adapter">Adapter:</label>
+  <textarea name="problemreport_body__adapter" cols="5" rows="1"></textarea>
+
+  <label for="problemreport__body__display">Display:</label>
+  <textarea name="problemreport_body__display" cols="5" rows="1"></textarea>
+</div>
+
+<div class="others">
+  <label for="others__body">Others:</label>
+  <textarea name="others_body" cols="15" rows="2"></textarea>
+</div>
+
+<div class="conditionArrival">
+  <h4>Condition On Arrival</h4>
+  <div class="grid">
+    <label for="scratchbody">
+      <input type="checkbox" name="scratchbody" id="scratchbody"> Scratches On Body
+    </label>
+
+    <label for="screendamage">
+      <input type="checkbox" name="screendamage" id="screendamage"> Screen Damage
+    </label>
+
+    <label for="panel1">
+      <input type="checkbox" name="panel" id="panel1"> Screen Panel Damage
+    </label>
+
+    <label for="panel2">
+      <input type="checkbox" name="panel" id="panel2"> TouchPad Panel Damage
+    </label>
+
+    <label for="panel3">
+      <input type="checkbox" name="panel" id="panel3"> Basepad Panel Damage
+    </label>
+
+    <label for="missingkey">
+      <input type="checkbox" name="missingkey" id="missingkey"> Missing Keys
+    </label>
+
+    <label for="missingscrew">
+      <input type="checkbox" name="missingscrew" id="missingscrew"> Missing Screws
+    </label>
+
+    <label for="brokenhinges">
+      <input type="checkbox" name="brokenhinges" id="brokenhinges"> Broken Hinges
+    </label>
+
+    <label for="others">
+      <input type="checkbox" name="others" id="others"> Others
+    </label>
+  </div>
+</div>
+
+
+<div class="servicedetails">
+  <h4>Service Details</h4>
+  <label for="naturecomplaint">Nature of Complaint:</label>
+  <textarea name="naturecomplaint" cols="15" rows="5"></textarea>
+
+  <label for="servicerendered">Service Rendered:</label>
+  <textarea name="servicerendered" cols="15" rows="5"></textarea>
+</div>
